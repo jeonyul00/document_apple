@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kH2-F5-XTV">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_8_CommonInputControlls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4x-VA-dFe">
+                                <rect key="frame" x="159" y="409" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-dw-2gJ">
+                                <rect key="frame" x="172" y="463" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchToggled:" destination="BYZ-38-t0r" eventType="valueChanged" id="kNI-ab-ZJD"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xcf-UI-j3K">
+                                <rect key="frame" x="136" y="353" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Mb0-Qm-JDr"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PJL-dD-y26">
+                                <rect key="frame" x="147" y="532" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="keyboardReturnKeyTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="0MD-Ma-oec"/>
+                                    <action selector="textChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Exy-u5-1dc"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="N4V-zf-4jR" appends="YES" id="Ll7-p5-wzQ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="B4x-VA-dFe" id="HUk-vo-sLe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="N4V-zf-4jR">
+                    <connections>
+                        <action selector="repondToTapGesture:" destination="BYZ-38-t0r" id="gF3-zY-DeI"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="138" y="5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c3M-Gv-6Gs">
+            <objects>
+                <viewController id="kH2-F5-XTV" customClass="LABViewController" customModule="_8_CommonInputControlls" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gFh-C3-9Gp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buT-KF-2tG">
+                                <rect key="frame" x="176" y="797.66666666666663" width="41.333333333333343" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bba-0n-pTJ">
+                                <rect key="frame" x="157" y="353.66666666666669" width="79" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="setText"/>
+                                <connections>
+                                    <action selector="setTextButtonTapped:" destination="kH2-F5-XTV" eventType="touchUpInside" id="fya-nH-ZAo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBE-YZ-HmB">
+                                <rect key="frame" x="150" y="408.66666666666669" width="93" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="clearText"/>
+                                <connections>
+                                    <action selector="clearTextButtonTapped:" destination="kH2-F5-XTV" eventType="touchUpInside" id="4fW-zN-5a0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text to display in the below" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-NF-90y">
+                                <rect key="frame" x="76" y="299.66666666666669" width="241" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="skE-8f-SXk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="skE-8f-SXk" firstAttribute="bottom" secondItem="buT-KF-2tG" secondAttribute="bottom" id="0F6-vg-59F"/>
+                            <constraint firstItem="HBE-YZ-HmB" firstAttribute="top" secondItem="bba-0n-pTJ" secondAttribute="bottom" constant="20" id="HVZ-Ng-KfK"/>
+                            <constraint firstItem="HBE-YZ-HmB" firstAttribute="centerX" secondItem="bba-0n-pTJ" secondAttribute="centerX" id="IXZ-t3-T88"/>
+                            <constraint firstItem="HBE-YZ-HmB" firstAttribute="centerY" secondItem="gFh-C3-9Gp" secondAttribute="centerY" id="PQD-hT-XhF"/>
+                            <constraint firstItem="buT-KF-2tG" firstAttribute="centerX" secondItem="gFh-C3-9Gp" secondAttribute="centerX" id="Y90-yT-Gb9"/>
+                            <constraint firstItem="bba-0n-pTJ" firstAttribute="centerX" secondItem="gFh-C3-9Gp" secondAttribute="centerX" id="dHK-LH-HDv"/>
+                            <constraint firstItem="bba-0n-pTJ" firstAttribute="centerX" secondItem="gFh-C3-9Gp" secondAttribute="centerX" id="glW-Kb-1ED"/>
+                            <constraint firstItem="HBE-YZ-HmB" firstAttribute="centerX" secondItem="gFh-C3-9Gp" secondAttribute="centerX" id="lVY-OO-4sh"/>
+                            <constraint firstItem="buT-KF-2tG" firstAttribute="centerX" secondItem="gFh-C3-9Gp" secondAttribute="centerX" id="zlR-G2-o1L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="q6o-NF-90y" id="7zq-tq-xG7"/>
+                        <outlet property="textLabel" destination="buT-KF-2tG" id="aoV-0a-vwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VdE-wB-F8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.68702290076328" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
