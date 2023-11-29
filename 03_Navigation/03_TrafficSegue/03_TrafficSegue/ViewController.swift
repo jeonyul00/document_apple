@@ -9,11 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
+    }
+    
+    @IBAction func unwindToRed(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        
     }
 
-
+    // 세그웨이 시작점에서 정보를 뒤로 넘길 때
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.navigationItem.title = textField.text
+    }
+    
 }
 
