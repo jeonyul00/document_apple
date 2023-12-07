@@ -13,7 +13,6 @@ let note3 = Note(title: "note3", text: "note3 content", timeStamp: Date())
 let note4 = Note(title: "note4", text: "note4 content", timeStamp: Date())
 
 let notes:[Note] = [note1,note2,note3,note4]
-
 let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 let archiveURL = documentDirectory.appendingPathComponent("notes_test").appendingPathExtension("plist")
 let propertyListEncoder = PropertyListEncoder()
